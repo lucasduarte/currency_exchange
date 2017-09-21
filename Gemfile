@@ -38,7 +38,7 @@ gem 'jbuilder', '~> 2.5'
 #Bootstrap 4 Ruby Gem for Rails / Sprockets and Compass. https://rubygems.org/gems/bootstrap
 gem 'bootstrap', '~> 4.0.0.beta'
 
-
+gem 'rest-client'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
