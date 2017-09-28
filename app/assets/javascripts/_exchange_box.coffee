@@ -1,7 +1,20 @@
 $(document).ready ->
-  $('form').submit ->
-    if $('form').attr('action') == '/exchange'
-      $.ajax '/exchange',
+  $('#quantity').keyup (e) ->
+    search() 
+
+  $('#swap').click ->
+    v1 = $('#currency').val()
+    v2 = $('#currency_destination').val();
+
+    $('#currency').val(v2);
+    $('#currency_destination').val(v1);
+
+    search();
+
+
+
+search = () ->
+  $.ajax '/exchange',
           type: 'POST'
           dataType: 'json'
           data: {
