@@ -4,7 +4,6 @@
       Simule sua conversão
     </div>
     <div class="card-block">
-      <%= form_tag("/exchange", method: "post", id: "exchange_form") do %>
         <div class="local_currency">
           <div class="form-group">
             <p class="title">Moeda Local</p>
@@ -24,9 +23,8 @@
           </div>
         </div>
         <div>
-          <button type="submit" class="btn btn-primary btn-exchange col-md-12">CONVERTER</button>
+          <button id="swap" class="btn btn-primary btn-exchange col-md-12">ALTERNAR MOEDAS</button>
         </div>
-      <% end %>
     </div>
   </div>
 </div>
